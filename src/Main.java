@@ -59,6 +59,7 @@ public class Main {
                     teams.add(
                             new Team().addName(name).addGames(games).addWins(randomWins).addLosts(games - randomWins).addGoals(random.nextInt(75)).addScores(randomWins * 3)
                     );
+                    Collections.sort(teams);
                     break;
                 case 4:
                     for (int i = 0; i < teams.size(); i++) {
